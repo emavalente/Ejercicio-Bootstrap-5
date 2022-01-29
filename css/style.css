@@ -26,6 +26,10 @@ h1 {
   margin-bottom: 0px;
 }
 
+.navbar ul li a:active {
+  background-color: #ececec;
+}
+
 /* Estilos al Header */
 header {
   padding-top: 60px;
@@ -39,10 +43,12 @@ header .btn {
   width: 7rem;
 }
 
+/* Estilos para el grid */
 .row {
   margin-bottom: 150px;
 }
 
+/* Estilos de los Cards */
 main .card {
   margin-left: auto;
   margin-right: auto;
@@ -51,6 +57,14 @@ main .card {
 
 /* Media Queries */
 @media (min-width: 1024px) {
+  .navbar ul li:hover {
+    border-bottom:solid 1px #ff0000;
+  }
+
+  .navbar ul li:active a {
+    border-bottom:none;
+  }
+
   main .card:hover {
     transform: scale(1.2);
     transition: all 1s;
