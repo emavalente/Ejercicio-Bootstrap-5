@@ -1,3 +1,4 @@
+/* Estilos globales */
 * {
   box-sizing: border-box;
   font-family: 'Source Serif Pro', serif;
@@ -8,9 +9,8 @@ h1 {
   font-family: 'Bebas Neue', cursive;
   font-size: 4rem;
 }
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Source Serif Pro', serif; */
 
+/* Estilos al Navbar */
 .navbar {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   border: 1px transparent;
@@ -26,26 +26,21 @@ font-family: 'Source Serif Pro', serif; */
   margin-bottom: 0px;
 }
 
+/* Estilos al Header */
 header {
   padding-top: 60px;
 }
 
 header img {
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 header .btn {
   width: 7rem;
 }
 
 .row {
-  /* height: 100vh; */
   margin-bottom: 150px;
-}
-
-.col {
-  margin-bottom: 30px;
 }
 
 main .card {
@@ -54,14 +49,10 @@ main .card {
   margin-bottom: 30px;
 }
 
-/* @media (min-width: 320px) {
-  header img {
-    display: none;
+/* Media Queries */
+@media (min-width: 1024px) {
+  main .card:hover {
+    transform: scale(1.2);
+    transition: all 1s;
   }
-}
-
-@media (min-width: 768px) {
-  header img {
-    display: inline-block;
-  }
-} */
+} 
